@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './styles.css'
 
@@ -7,6 +7,9 @@ const Navbar = () => {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
+  useEffect(() => {
+    console.log("IS NAV EXPANDED", isNavExpanded)
+  },[isNavExpanded])
 
   return (
     <nav className="navigation">
@@ -39,14 +42,14 @@ const Navbar = () => {
         }
       >
         <ul>
-          <li>
+          <li onClick={() => setIsNavExpanded(!isNavExpanded)}>
             <Link to="/about"><span>About</span></Link>
           </li>
           <li>
-            <Link to="/resume"><span>Resume&Jobs</span></Link>
+            <Link onClick={() => setIsNavExpanded(!isNavExpanded)} to="/resume"><span>Resume&Jobs</span></Link>
           </li>
           <li>
-            <Link to="/contact"><span>Contact</span></Link>
+            <Link onClick={() => setIsNavExpanded(!isNavExpanded)} to="/contact"><span>Contact</span></Link>
           </li>
         </ul>
       </div>
