@@ -1,13 +1,13 @@
 import React from 'react'
 import View from '../../components/View'
-import styles from './resume.css';
+import './resume.css';
 import Experiences from '../../components/Experiences';
 
 
 const Resume = () => {
   return (
     <View>
-      <div className={styles.root}>
+      <div className="resumeCont">
         <Experiences/>
       </div>
     </View>
