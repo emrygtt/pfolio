@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-top: 15rem;
+}
+.email {
+  color: #e4f500;
+}
+
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    margin-left: 2rem;
+}
+}
