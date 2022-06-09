@@ -7,7 +7,7 @@ import Experiences from '../../components/Experiences';
 const Resume = () => {
   return (
     <View>
-      <div className="resumeCont">
+      <div style={{display:'flex', justifyContent:'center'}}>
         <Experiences/>
       </div>
     </View>
