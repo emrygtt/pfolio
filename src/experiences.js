@@ -6,7 +6,7 @@ export const experiences = [
   },
   {
     company: "Magis Technology",
-    year: "10/2021 - Ongoing",
+    year: "01/2021 - 10/2021",
     title: "Software Engineer",
   },
   {
